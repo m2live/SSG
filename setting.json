@@ -1,3 +1,30 @@
 {
-  "version": "test"
+    "meta": {
+        "version": 1,
+        "hostName": "winesoftQA",
+        "admin": "admin@example.com",
+        "defaultHosting": "qa.m2"
+    },
+    "functions": {
+        "contents": {
+            "dvhls": {
+                "run": {
+                    "enable": true
+                }
+            }
+        }
+    },
+    "hosting": [
+        {
+            "name": "qa.m2",
+            "enable": true,
+            "listen": "*:80",
+            "origin": {
+                "protocol": "http",
+                "address": [
+                    "0.0.0.0"
+                ]
+            }
+        }
+    ]
 }
